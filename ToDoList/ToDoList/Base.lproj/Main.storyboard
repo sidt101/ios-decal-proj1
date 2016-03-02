@@ -75,30 +75,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TL5-ZR-pym">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the To-Do Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgu-aR-lEg">
-                                <rect key="frame" x="220" y="83" width="160" height="21"/>
+                                <rect key="frame" x="220" y="139" width="160" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TL5-ZR-pym">
-                                <rect key="frame" x="20" y="232" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TL5-ZR-pym" firstAttribute="top" secondItem="fgu-aR-lEg" secondAttribute="bottom" constant="128" id="6bf-25-ISu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TL5-ZR-pym" secondAttribute="trailing" id="Efv-U3-djr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TL5-ZR-pym" secondAttribute="trailing" id="CVo-45-gsk"/>
                             <constraint firstItem="fgu-aR-lEg" firstAttribute="centerX" secondItem="2nF-Lg-cEQ" secondAttribute="centerX" constant="-1" id="Ks4-zH-M2h"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="TL5-ZR-pym" secondAttribute="leading" id="OCw-Dq-aSQ"/>
                             <constraint firstItem="fgu-aR-lEg" firstAttribute="leading" secondItem="2nF-Lg-cEQ" secondAttribute="leadingMargin" constant="199" id="Rcx-JY-Qc7"/>
-                            <constraint firstItem="fgu-aR-lEg" firstAttribute="centerY" secondItem="2nF-Lg-cEQ" secondAttribute="centerY" constant="-206.5" id="SMn-83-vq3"/>
+                            <constraint firstItem="fgu-aR-lEg" firstAttribute="centerX" secondItem="2nF-Lg-cEQ" secondAttribute="centerX" id="a4R-XU-yPa"/>
                             <constraint firstItem="fgu-aR-lEg" firstAttribute="centerX" secondItem="2nF-Lg-cEQ" secondAttribute="centerX" id="f3E-p2-e4p"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TL5-ZR-pym" secondAttribute="leading" id="gjC-fF-6ie"/>
                             <constraint firstItem="fgu-aR-lEg" firstAttribute="top" secondItem="ESb-kc-lNb" secondAttribute="bottom" constant="34" id="iqW-9a-6f0"/>
-                            <constraint firstItem="fgu-aR-lEg" firstAttribute="centerX" secondItem="2nF-Lg-cEQ" secondAttribute="centerX" id="tEA-Or-tES"/>
+                            <constraint firstItem="fgu-aR-lEg" firstAttribute="top" secondItem="ESb-kc-lNb" secondAttribute="bottom" constant="75" id="lTQ-Km-s4f"/>
+                            <constraint firstItem="TL5-ZR-pym" firstAttribute="centerY" secondItem="2nF-Lg-cEQ" secondAttribute="centerY" id="nSa-0V-B2I"/>
                             <constraint firstItem="fgu-aR-lEg" firstAttribute="top" secondItem="ESb-kc-lNb" secondAttribute="bottom" constant="34" id="xjW-2s-tHR"/>
+                            <constraint firstItem="TL5-ZR-pym" firstAttribute="centerX" secondItem="2nF-Lg-cEQ" secondAttribute="centerX" id="ydG-lN-fW2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -180,13 +181,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Number of Tasks Completed Today" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sig-cZ-qeP">
-                                <rect key="frame" x="20" y="132" width="560" height="89"/>
+                                <rect key="frame" x="20" y="132" width="560" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n15-kz-GNY">
-                                <rect key="frame" x="285.5" y="293.5" width="29.5" height="79"/>
+                                <rect key="frame" x="285" y="260" width="29.5" height="79"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="66"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -194,12 +195,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="n15-kz-GNY" firstAttribute="centerX" secondItem="sig-cZ-qeP" secondAttribute="centerX" id="4zZ-C4-wVi"/>
-                            <constraint firstItem="n15-kz-GNY" firstAttribute="centerY" secondItem="wyv-Rc-xZ1" secondAttribute="centerY" constant="33" id="M9F-o6-QlL"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="sig-cZ-qeP" secondAttribute="leading" id="MEc-g0-CMv"/>
-                            <constraint firstItem="sig-cZ-qeP" firstAttribute="centerX" secondItem="wyv-Rc-xZ1" secondAttribute="centerX" constant="0.5" id="THh-P5-CP2"/>
-                            <constraint firstItem="LHS-Ad-TBw" firstAttribute="top" secondItem="sig-cZ-qeP" secondAttribute="bottom" constant="379" id="UaE-mC-xdT"/>
-                            <constraint firstItem="sig-cZ-qeP" firstAttribute="top" secondItem="nFG-rk-TIc" secondAttribute="bottom" constant="68" id="Zfv-1n-8nJ"/>
+                            <constraint firstItem="n15-kz-GNY" firstAttribute="centerY" secondItem="wyv-Rc-xZ1" secondAttribute="centerY" id="4Vy-AE-YML"/>
+                            <constraint firstItem="n15-kz-GNY" firstAttribute="centerX" secondItem="wyv-Rc-xZ1" secondAttribute="centerX" id="Nq3-9z-VPa"/>
+                            <constraint firstItem="sig-cZ-qeP" firstAttribute="top" secondItem="nFG-rk-TIc" secondAttribute="bottom" constant="68" id="Q1f-WC-Skd"/>
+                            <constraint firstItem="sig-cZ-qeP" firstAttribute="centerX" secondItem="wyv-Rc-xZ1" secondAttribute="centerX" id="fJh-CA-lsG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sig-cZ-qeP" secondAttribute="leading" id="pAR-Xu-ZWT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SGP-3a-YWn">
